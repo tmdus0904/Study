@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qna게시판</title>
+</head>
+<style type="text/css">
+    @import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'NanumSquareNeo', sans-serif;
+    }
+
+    ul,
+    li {
+        list-style: none;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #5D6DBE;
+    }
+
+    textarea {
+        border: 1px solid black;
+        resize: none;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .button1 {
+        background-color: #5D6DBE;
+    }
+
+    .button2 {
+        background-color: #5D6DBE;
+    }
+
+    .button3 {
+        background-color: #5D6DBE;
+    }
+
+    .b_a {
+        width: max-content;
+
+        margin: 0 auto;
+
+    }
+
+    #write_area {
+        width: max-content;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 20pt;
+
+    }
+
+    .head_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 180px;
+        background-color: #f5fafc;
+        border-bottom: 1px solid #ddd;
+        padding: 0 20px;
+    }
+
+    .head_left {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    .head_right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
+
+    .head_left>div {
+        margin-left: 50px;
+    }
+
+    .head_right>div {
+        margin-right: 50px;
+    }
+</style>
+
+<body>
+    <form>
+        <header>
+            <div class="head_wrap">
+                <div class="head_left">
+                    <div class="std_room"><a href="#">스터디룸</a></div>
+                    <div class="qna_list"><a href="#">Q&A</a></div>
+                </div>
+                <div class="head_title">
+                    <a href="#"><img src="./img01.png" height="180px"></a>
+                </div>
+                <div class="head_right">
+                    <div class="login"><a href="#">마이페이지</a></div>
+                    <div class="sign"><a href="#">로그아웃</a></div>
+                </div>
+            </div>
+        </header>
+        <br><br><br>
+        <h3><b>Q&A 게시판</b></h3>
+        <br>
+        <br><br>
+        <main>
+            <table class="b_a">
+                <div id="write_area">
+                    <div>
+                        <textarea name="title" id="title" rows="1" cols="130%" placeholder="제목을 입력하세요" maxlength="200"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <textarea name="content" id="content" placeholder="내용을 입력하세요" rows="30" cols="130%"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <input type="file" name="SelectFile" />
+                    </div>
+                    <div>
+                        <tr>
+                            <td colspan="1" align="left">
+                                <input type="button" value="목록" onclick="" class="button button1">
+                            </td>
+
+                            <td colspan="2" align="right">
+                                <input type="submit" value="글등록하기" class="button button2">
+                                <input type="button" value="취소" class="button button3" onclick="">
+                            </td>
+                        </tr>
+                    </div>
+                </div>
+            </table>
+        </main>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'NanumSquareNeo', sans-serif;
+        }
+
+        ul,
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #5D6DBE;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 20pt;
+
+        }
+
+        .head_wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 180px;
+            background-color: #f5fafc;
+            border-bottom: 1px solid #ddd;
+            padding: 0 20px;
+        }
+
+        .head_left {
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+        }
+
+        .head_right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 100px;
+        }
+
+        .head_left>div {
+            margin-left: 50px;
+        }
+
+        .head_right>div {
+            margin-right: 50px;
+        }
+
+        textarea {
+            border: 1px solid black;
+            resize: none;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .button1 {background-color: #5D6DBE; }
+        .button2 {background-color: #5D6DBE; }
+        .button3 {background-color: #5D6DBE; }
+
+        .btn-reply {
+            
+            background-color: #5D6DBE;
+        }
+        .reply-group{
+            display: flex;
+            
+            justify-content: center;
+            
+        }
+
+        #form1 {
+            width: max-content;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        #qna-title {
+            font-size: 2em;
+            padding-bottom: 5px;
+        }
+
+        #qna-body {
+            text-align: left;
+            padding: 20px;
+            flex: 1;
+            height: 130px;
+        }
+
+        #qna-authorandtype {
+            float: left;
+            padding: 5px 20px;
+        }
+        #qna-views {
+            float: right;
+            padding: 5px 20px;
+        }
+        #qna-head hr {
+            margin: 0;
+        }
+        .reply{
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head_wrap">
+            <div class="head_left">
+                <div class="std_room"><a href="#">스터디룸</a></div>
+                <div class="qna_list"><a href="#">Q&A</a></div>
+            </div>
+            <div class="head_title">
+                <a href="#"><img src="./img01.png" height="180px"></a>
+            </div>
+            <div class="head_right">
+                <div class="login"><a href="#">마이페이지</a></div>
+                <div class="sign"><a href="#">로그아웃</a></div>
+            </div>
+        </div>
+    </header>
+    <br><br>
+    <h3><b>Q&A 게시판</b></h3>
+    <br>
+    <form id="form1">
+        <div id="qna-head">
+            <div id="qna-title">글 제목</div>
+            <hr>
+            <div id="qna-authorandtype">작성자</div>
+            <div id="qna-views">조회수</div>
+            <div style="clear:both"></div>
+            <hr>
+        </div>
+        <div id="qna-body">
+            본문 내용
+        </div>
+        <div class="reply">
+            <h5 class="reply-header">댓글을 남겨주세요</h5>
+            <div class="reply-body">
+                    <div class="reply-group">
+                        <textarea name="content" class="form-control" rows="4" cols="100" required></textarea>
+                        <button type="submit" class="button btn-reply">등록</button>
+                    </div>
+            </div>
+            <br>
+            <div>
+                <tr>
+                    <td colspan="3" align="left">
+                        <input type="button" value="목록" onclick="" class="button button1">
+                        <input type="button" value="다음글" onclick="" class="button button2">
+                        <input type="button" value="이전글" onclick="" class="button button3">
+                    </td>
+                </tr>
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
